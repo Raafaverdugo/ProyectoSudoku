@@ -14,5 +14,12 @@ public interface ISudoku {
 
     // Método para mostrar el tablero en consola
     void mostrarTablero();
+
+    //Método para dar una pista
+    int[] darPista();
+
+    //Getters
+    int[][] getTablero();
+    boolean[][] getCeldasFijas();
 }
 
