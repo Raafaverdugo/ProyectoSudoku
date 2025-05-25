@@ -1,6 +1,6 @@
-# 🎉 Sudoku Solver Java 🎉
+# 🎉 Sudoku Java 🎉
 
-¡Bienvenido a **Sudoku Solver Java**! 🎲✨
+¡Bienvenido a **Sudoku Java**! 🎲✨
 
 ¿Te gustan los retos? ¿Disfrutas de resolver sudokus? Entonces este proyecto es para ti.
 
