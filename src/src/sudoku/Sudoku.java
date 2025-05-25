@@ -1,3 +1,5 @@
+package sudoku;
+
 public class Sudoku implements ISudoku {
     private int[][] tablero;
     private boolean[][] celdasFijas;
@@ -16,9 +18,9 @@ public class Sudoku implements ISudoku {
         this.dificultadActual = dificultad;
 
         switch (dificultad) {
-            case FACIL: pistasDisponibles = 3; break;
-            case MEDIO: pistasDisponibles = 2; break;
-            case DIFICIL: pistasDisponibles = 1; break;
+            case Dificultad.FACIL: pistasDisponibles = 3; break;
+            case Dificultad.MEDIO: pistasDisponibles = 2; break;
+            case Dificultad.DIFICIL: pistasDisponibles = 1; break;
             default: pistasDisponibles = 0; break;
         }
 
@@ -173,14 +175,6 @@ public class Sudoku implements ISudoku {
         return true;
     }
 
-    public void mostrarTablero() {
-        for (int i = 0; i < 9; i++) {
-            for (int j = 0; j < 9; j++) {
-                System.out.print(tablero[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
 
     public int[][] getTablero() {
         return tablero;

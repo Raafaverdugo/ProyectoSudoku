@@ -1,3 +1,5 @@
+package sudoku;
+
 import java.util.Random;
 
 public class GeneradorSudoku implements IGeneradorSudoku {
@@ -66,9 +68,9 @@ public class GeneradorSudoku implements IGeneradorSudoku {
     private void eliminarCeldas(Dificultad dificultad) {
         int celdasVisibles;
         switch (dificultad) {
-            case FACIL: celdasVisibles = 51; break;
-            case MEDIO: celdasVisibles = 41; break;
-            case DIFICIL: celdasVisibles = 31; break;
+            case Dificultad.FACIL: celdasVisibles = 51; break;
+            case Dificultad.MEDIO: celdasVisibles = 41; break;
+            case Dificultad.DIFICIL: celdasVisibles = 31; break;
             default: celdasVisibles = 41;
         }
 

@@ -1,3 +1,5 @@
+package sudoku;
+
 public interface IGeneradorSudoku {
 
     // Método para generar el tablero con una dificultad específica

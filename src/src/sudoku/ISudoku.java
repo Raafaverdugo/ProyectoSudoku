@@ -1,3 +1,5 @@
+package sudoku;
+
 public interface ISudoku {
 
     // Método para generar el tablero con una dificultad específica
@@ -11,9 +13,6 @@ public interface ISudoku {
 
     // Método para verificar si el tablero está resuelto correctamente
     boolean estaResuelto();
-
-    // Método para mostrar el tablero en consola
-    void mostrarTablero();
 
     //Método para dar una pista
     int[] darPista();
