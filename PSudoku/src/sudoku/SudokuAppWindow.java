@@ -88,7 +88,7 @@ public class SudokuAppWindow extends JFrame {
         btnGenerar.addActionListener(e -> {
             String[] opciones = {"FACIL", "MEDIO", "DIFICIL"};
             String seleccion = (String) JOptionPane.showInputDialog(this, "Selecciona dificultad:",
-                    "sudoku.Dificultad", JOptionPane.QUESTION_MESSAGE, null, opciones, opciones[1]);
+                    "Dificultad", JOptionPane.QUESTION_MESSAGE, null, opciones, opciones[1]);
 
             if (seleccion != null) {
                 Dificultad dificultad = Dificultad.valueOf(seleccion);
@@ -131,16 +131,16 @@ public class SudokuAppWindow extends JFrame {
                     " = " + valor + " | Pistas restantes: " + sudoku.getPistasDisponibles());
         });
 
-        // Verifica si el sudoku.Sudoku está correctamente resuelto
+        // Verifica si el Sudoku está correctamente resuelto
         btnVerificar.addActionListener(e -> {
             if (sudoku.estaResuelto()) {
-                mensajeLabel.setText("¡Felicidades! sudoku.Sudoku resuelto correctamente.");
+                mensajeLabel.setText("¡Felicidades! Sudoku resuelto correctamente.");
             } else {
-                mensajeLabel.setText("El sudoku.Sudoku no está resuelto correctamente.");
+                mensajeLabel.setText("El Sudoku no está resuelto correctamente.");
             }
         });
 
-        // Resuelve automáticamente el sudoku.Sudoku y actualiza la interfaz
+        // Resuelve automáticamente el Sudoku y actualiza la interfaz
         btnResolver.addActionListener(e -> {
             int[][] solucion = sudoku.getSolucion();
             sudoku.setTablero(solucion);

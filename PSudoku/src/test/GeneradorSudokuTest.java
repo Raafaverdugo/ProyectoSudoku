@@ -1,7 +1,9 @@
-package sudoku;
+package test;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import sudoku.Dificultad;
+import sudoku.GeneradorSudoku;
 
 import static org.junit.jupiter.api.Assertions.*;
 
